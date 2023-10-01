@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hash the password securely
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $mysqli = new mysqli("localhost", "root", "", "my_web_app_db");
+    $mysqli = new mysqli("localhost", "root", "", "cdx");
 
     if ($mysqli->connect_error) {
         die("Connection failed: " . $mysqli->connect_error);
