@@ -1,10 +1,7 @@
--- Create a new database (if it doesn't exist)
-CREATE DATABASE IF NOT EXISTS my_web_app_db;
+CREATE DATABASE IF NOT EXISTS cdx;
 
--- Switch to the new database
-USE my_web_app_db;
+USE cdx;
 
--- Create a table to store user information
 CREATE TABLE IF NOT EXISTS users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
