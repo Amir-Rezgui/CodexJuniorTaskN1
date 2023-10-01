@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     // Replace with your database connection code
-    $mysqli = new mysqli("localhost", "root", "", "my_web_app_db");
+    $mysqli = new mysqli("localhost", "root", "", "cdx");
 
     if ($mysqli->connect_error) {
         die("Connection failed: " . $mysqli->connect_error);
